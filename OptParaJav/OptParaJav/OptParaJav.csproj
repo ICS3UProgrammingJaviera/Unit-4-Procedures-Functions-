@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CDBD94DD-C4FC-4615-B1FA-C97B62AD1E90}</ProjectGuid>
+    <ProjectGuid>{949EC8AB-7046-40F2-AD18-554487F2782B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ConvertToFaren_Jav_</RootNamespace>
-    <AssemblyName>ConvertToFaren%28Jav%29</AssemblyName>
+    <RootNamespace>OptParaJav</RootNamespace>
+    <AssemblyName>OptParaJav</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,16 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConvertToFarenJavForm.cs">
+    <Compile Include="OptParaJavForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConvertToFarenJavForm.Designer.cs">
-      <DependentUpon>ConvertToFarenJavForm.cs</DependentUpon>
+    <Compile Include="OptParaJavForm.Designer.cs">
+      <DependentUpon>OptParaJavForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConvertToFarenJav.cs" />
+    <Compile Include="OptParaJav.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ConvertToFarenJavForm.resx">
-      <DependentUpon>ConvertToFarenJavForm.cs</DependentUpon>
+    <EmbeddedResource Include="OptParaJavForm.resx">
+      <DependentUpon>OptParaJavForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -64,7 +64,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,9 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\celsius.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CDBD94DD-C4FC-4615-B1FA-C97B62AD1E90}</ProjectGuid>
+    <ProjectGuid>{77A77962-413F-4907-99C0-7A2CB5A95547}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ConvertToFaren_Jav_</RootNamespace>
-    <AssemblyName>ConvertToFaren%28Jav%29</AssemblyName>
+    <RootNamespace>VolumeOfCylinderJav</RootNamespace>
+    <AssemblyName>VolumeOfCylinderJav</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,17 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConvertToFarenJavForm.cs">
+    <Compile Include="VolumeOfCylinderJavForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConvertToFarenJavForm.Designer.cs">
-      <DependentUpon>ConvertToFarenJavForm.cs</DependentUpon>
+    <Compile Include="VolumeOfCylinderJavForm.Designer.cs">
+      <DependentUpon>VolumeOfCylinderJavForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConvertToFarenJav.cs" />
+    <Compile Include="VolumeOfCylinderJav.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ConvertToFarenJavForm.resx">
-      <DependentUpon>ConvertToFarenJavForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -66,6 +63,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="VolumeOfCylinderJavForm.resx">
+      <DependentUpon>VolumeOfCylinderJavForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,7 +80,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\celsius.jpeg" />
+    <None Include="Resources\cylinder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
