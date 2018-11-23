@@ -30,7 +30,7 @@ namespace OptParaJav
         //Description: This procedure displays a message box with the entire address the user inputs, including the unitNum.
         private void DisplayAddress(String address, String province, String postalCode, String city, String unitNum)
         {
-            MessageBox.Show("Your address is:" + address + province + city + postalCode + unitNum);
+            MessageBox.Show("Your address is:" + address + ", " + province + ", " + city + " "  + postalCode + ", " + "Unit # " + unitNum);
         }
         //Procedure: DisplayAddress
         //Input: String address, provinnce, city, postal code
@@ -76,7 +76,7 @@ namespace OptParaJav
             }
             else if (usersUnitNum == "")
             {
-                DisplayAddress(usersAddress, usersProvince, usersCity, usersPostalCode);
+                DisplayAddress(usersAddress , usersProvince , usersCity , usersPostalCode);
             }
             else
             {

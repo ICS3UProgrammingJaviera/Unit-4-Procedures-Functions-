@@ -42,7 +42,9 @@
             this.txtProvince = new System.Windows.Forms.TextBox();
             this.txtUnitNum = new System.Windows.Forms.TextBox();
             this.txtPostalCode = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblEnterAddress
@@ -66,11 +68,12 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(684, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(724, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -85,7 +88,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -178,12 +181,23 @@
             this.txtPostalCode.Size = new System.Drawing.Size(164, 24);
             this.txtPostalCode.TabIndex = 11;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::OptParaJav.Properties.Resources.maaaaps;
+            this.pictureBox1.Location = new System.Drawing.Point(434, 298);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(290, 221);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmOptParaJav
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.ClientSize = new System.Drawing.Size(684, 415);
+            this.BackColor = System.Drawing.Color.SeaGreen;
+            this.ClientSize = new System.Drawing.Size(724, 521);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtPostalCode);
             this.Controls.Add(this.txtUnitNum);
             this.Controls.Add(this.txtProvince);
@@ -202,6 +216,7 @@
             this.Load += new System.EventHandler(this.frmOptParaJav_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,6 +238,7 @@
         private System.Windows.Forms.TextBox txtProvince;
         private System.Windows.Forms.TextBox txtUnitNum;
         private System.Windows.Forms.TextBox txtPostalCode;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

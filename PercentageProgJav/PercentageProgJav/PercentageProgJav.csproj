@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{949EC8AB-7046-40F2-AD18-554487F2782B}</ProjectGuid>
+    <ProjectGuid>{25469AB4-0AA4-4A8F-A02D-38E9667D98C8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>OptParaJav</RootNamespace>
-    <AssemblyName>OptParaJav</AssemblyName>
+    <RootNamespace>PercentageProgJav</RootNamespace>
+    <AssemblyName>PercentageProgJav</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,16 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OptParaJavForm.cs">
+    <Compile Include="PercentageProgJavForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OptParaJavForm.Designer.cs">
-      <DependentUpon>OptParaJavForm.cs</DependentUpon>
+    <Compile Include="PercentageProgJavForm.Designer.cs">
+      <DependentUpon>PercentageProgJavForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OptParaJav.cs" />
+    <Compile Include="PercentageProgJav.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="OptParaJavForm.resx">
-      <DependentUpon>OptParaJavForm.cs</DependentUpon>
+    <EmbeddedResource Include="PercentageProgJavForm.resx">
+      <DependentUpon>PercentageProgJavForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -64,7 +64,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,9 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\maaaaps.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
